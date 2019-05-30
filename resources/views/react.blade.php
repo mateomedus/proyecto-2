@@ -17,9 +17,15 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
+    <link href="{{asset('css/home.css')}}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="react-app"></div>
+    @include('layouts.app')
+    @include('prode')
+    
+        <div id="react-app"></div>
+    
+    
 </body>
 </html>

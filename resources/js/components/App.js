@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import TodoApp from './TodoApp'
+import ProdeApp from './ProdeApp'
 
 class App extends Component {
     render () {
         return (
             <BrowserRouter>
                 <Switch>
-                    <Route exact path="/" component={TodoApp}/>
+                    <Route exact path="/" component={ProdeApp}/>
                     {/* <Route component={NotFound}/> */}
                 </Switch>
             </BrowserRouter>
