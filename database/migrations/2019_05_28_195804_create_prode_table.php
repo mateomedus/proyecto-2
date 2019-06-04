@@ -15,14 +15,21 @@ class CreateProdeTable extends Migration
     {
         Schema::create('prode', function (Blueprint $table) {
             $table->bigIncrements('id');   
-            $table->string('cuartos1');
-            $table->string('cuartos2');
-            $table->string('cuartos3');
-            $table->string('cuartos4');
-            $table->string('semi1');
-            $table->string('semi2');
-            $table->string('final');
-            $table->string('campeon');
+            $table->string('cuartos1')->nullable();
+            $table->string('cuartos2')->nullable();
+            $table->string('cuartos3')->nullable();
+            $table->string('cuartos4')->nullable();
+            $table->string('cuartos5')->nullable();
+            $table->string('cuartos6')->nullable();
+            $table->string('cuartos7')->nullable();
+            $table->string('cuartos8')->nullable();
+            $table->string('semi1')->nullable();
+            $table->string('semi2')->nullable();
+            $table->string('semi3')->nullable();
+            $table->string('semi4')->nullable();
+            $table->string('final1')->nullable();
+            $table->string('final2')->nullable();
+            $table->string('campeon')->nullable();
             $table->timestamps();
         });
     }
