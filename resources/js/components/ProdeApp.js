@@ -248,33 +248,6 @@ export default class ProdeApp extends Component{
                 break;
         }
     }
-
-    /* setWinner = (partido) =>{
-        let num = Math.floor(partido/2);
-        if(string.substring(start, end)){
-            this.setState(state => ({
-                cuartos2: state.cuartos2 = winner
-            }));
-        }
-        else
-            if(){
-                this.setState(state => ({
-                    final2: state.semi = winner
-                }));
-            }   
-            else
-                if(){
-                    this.setState(state => ({
-                        final2: state.final2 = winner
-                    }));
-                }
-            
-        
-
-
-        if(partido!=15)
-            this.adjust(num);
-    } */
     
     adjust = (partido) =>{
         switch(partido) {
