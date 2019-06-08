@@ -65759,8 +65759,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _ProdeTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ProdeTable */ "./resources/js/components/ProdeTable.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -65780,6 +65782,7 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -65838,14 +65841,14 @@ function (_Component) {
       window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
       window.axios.defaults.headers.common['Authorization'] = 'Bearer ' + api_token.content;
       var self = this;
-      axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/teams').then(function (response) {
+      axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('/api/teams').then(function (response) {
         self.setState({
           octavos: response.data
         });
       })["catch"](function (error) {
         console.log(error);
       });
-      axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/prodes').then(function (response) {
+      axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('/api/prodes').then(function (response) {
         self.setState({
           prodes: response.data
         });
@@ -65882,7 +65885,7 @@ function (_Component) {
     key: "save",
     value: function save() {
       var self = this;
-      axios__WEBPACK_IMPORTED_MODULE_2___default.a.post('/api/prodes', {
+      axios__WEBPACK_IMPORTED_MODULE_3___default.a.post('/api/prodes', {
         data: this.state
       }).then(function (response) {
         self.setState({
@@ -65897,7 +65900,7 @@ function (_Component) {
     key: "update",
     value: function update() {
       if (this.state.idProde != null) {
-        axios__WEBPACK_IMPORTED_MODULE_2___default.a.put('/api/prodes/' + this.state.idProde, {
+        axios__WEBPACK_IMPORTED_MODULE_3___default.a.put('/api/prodes/' + this.state.idProde, {
           data: this.state
         }).then(function (response) {
           alert('Prode actualizado.');
@@ -65912,7 +65915,7 @@ function (_Component) {
       var self = this;
 
       if (this.state.idProde != null) {
-        axios__WEBPACK_IMPORTED_MODULE_2___default.a["delete"]('/api/prodes/' + this.state.idProde, {}).then(function (response) {
+        axios__WEBPACK_IMPORTED_MODULE_3___default.a["delete"]('/api/prodes/' + this.state.idProde, {}).then(function (response) {
           self.setState({
             prodes: response.data
           });
@@ -65948,7 +65951,7 @@ function (_Component) {
     value: function search(e) {
       var id = e.target.id;
       var self = this;
-      axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/prodes/' + id).then(function (response) {
+      axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('/api/prodes/' + id).then(function (response) {
         self.setState({
           cuartos1: response.data[0]['cuartos1'],
           cuartos2: response.data[0]['cuartos2'],
@@ -66373,39 +66376,15 @@ function (_Component) {
         className: "button"
       }, this.state.octavos[15], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
-      }, "\xA0")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "jumbotron"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-sm-4"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Prode numero: ", this.state.idProde), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "btn btn-secondary mb-2 mr-2 ",
-        onClick: this.clear
-      }, "Limpiar"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "btn btn-success mb-2 mr-2 ",
-        onClick: this.save
-      }, "Guardar"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "btn btn-primary mb-2 mr-2 ",
-        onClick: this.update
-      }, "Actualizar"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        className: "btn btn-danger mb-2 mr-2 ",
-        onClick: this["delete"]
-      }, "Borrar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-sm myDiv Content"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "list-group"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-        className: "list-group-item list-group-item-action active"
-      }, "Mis prodes"), this.state.prodes.map(function (prode, i) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-          type: "button",
-          key: prode.id,
-          id: prode.id,
-          className: "list-group-item list-group-item-action",
-          onClick: _this2.search
-        }, "Prode ", prode.id, " / Creado: ", prode.created_at);
-      })))))));
+      }, "\xA0")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProdeTable__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        idProde: this.state.idProde,
+        prodes: this.state.prodes,
+        clear: this.clear,
+        save: this.save,
+        update: this.update,
+        "delete": this["delete"],
+        search: this.search
+      })));
     }
   }]);
 
@@ -66428,9 +66407,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ProdeTable; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
 
@@ -66444,16 +66429,64 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var ProdeTable =
 /*#__PURE__*/
 function (_Component) {
   _inherits(ProdeTable, _Component);
 
-  function ProdeTable() {
+  function ProdeTable(props) {
+    var _this;
+
     _classCallCheck(this, ProdeTable);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(ProdeTable).apply(this, arguments));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(ProdeTable).call(this));
+    _this.state = {
+      prodes: props.prodes
+    };
+    return _this;
   }
+
+  _createClass(ProdeTable, [{
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "jumbotron"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-sm-4"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Prode numero: ", this.props.idProde), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "btn btn-secondary mb-2 mr-2 ",
+        onClick: this.props.clear
+      }, "Limpiar"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "btn btn-success mb-2 mr-2 ",
+        onClick: this.props.save
+      }, "Guardar"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "btn btn-primary mb-2 mr-2 ",
+        onClick: this.props.update
+      }, "Actualizar"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "btn btn-danger mb-2 mr-2 ",
+        onClick: this.props["delete"]
+      }, "Borrar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-sm myDiv Content"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "list-group"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        className: "list-group-item list-group-item-action active"
+      }, "Mis prodes"), this.props.prodes.map(function (prode, i) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          type: "button",
+          key: prode.id,
+          id: prode.id,
+          className: "list-group-item list-group-item-action",
+          onClick: _this2.props.search
+        }, "Prode ", prode.id, " / Creado: ", prode.created_at);
+      })))));
+    }
+  }]);
 
   return ProdeTable;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);

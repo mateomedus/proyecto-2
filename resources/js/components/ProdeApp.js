@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ProdeTable from './ProdeTable';
+import ReactDOM from 'react-dom';
 import axios from 'axios';
 
 export default class ProdeApp extends Component{
@@ -373,35 +374,16 @@ export default class ProdeApp extends Component{
                         </div>              
                     </div>
                 </div>
-                <div className="jumbotron" >
-                    <div className="col-sm-4" >
-                        <h1>Prode numero: {this.state.idProde}</h1>
-                        <button className="btn btn-secondary mb-2 mr-2 " onClick={this.clear}>Limpiar</button>
-                        <button className="btn btn-success mb-2 mr-2 " onClick={this.save}>Guardar</button>
-                        <button className="btn btn-primary mb-2 mr-2 " onClick={this.update}>Actualizar</button>
-                        <button className="btn btn-danger mb-2 mr-2 " onClick={this.delete}>Borrar</button>
-                    </div>
-                    <div className="row">
-                        <div className="col-sm myDiv Content">
-                            <div className="list-group">
-                                <h3 className="list-group-item list-group-item-action active">Mis prodes</h3>
-                                {this.state.prodes.map((prode, i) =>
-                                    <button type="button"
-                                        key = {prode.id}
-                                        id = {prode.id} 
-                                        className="list-group-item list-group-item-action" 
-                                        onClick={this.search}>
-                                            Prode {prode.id} / 
-                                            Creado: {prode.created_at}
-                                    </button>
-                                )}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                
+                               
+                <ProdeTable idProde={this.state.idProde}
+                            prodes={this.state.prodes}
+                            clear={this.clear}
+                            save={this.save}
+                            update={this.update}
+                            delete={this.delete}
+                            search={this.search}
+                            
+                            />
                 
             </section>
         </div>
