@@ -6274,17 +6274,6 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./node_modules/constants-browserify/constants.json":
-/*!**********************************************************!*\
-  !*** ./node_modules/constants-browserify/constants.json ***!
-  \**********************************************************/
-/*! exports provided: O_RDONLY, O_WRONLY, O_RDWR, S_IFMT, S_IFREG, S_IFDIR, S_IFCHR, S_IFBLK, S_IFIFO, S_IFLNK, S_IFSOCK, O_CREAT, O_EXCL, O_NOCTTY, O_TRUNC, O_APPEND, O_DIRECTORY, O_NOFOLLOW, O_SYNC, O_SYMLINK, O_NONBLOCK, S_IRWXU, S_IRUSR, S_IWUSR, S_IXUSR, S_IRWXG, S_IRGRP, S_IWGRP, S_IXGRP, S_IRWXO, S_IROTH, S_IWOTH, S_IXOTH, E2BIG, EACCES, EADDRINUSE, EADDRNOTAVAIL, EAFNOSUPPORT, EAGAIN, EALREADY, EBADF, EBADMSG, EBUSY, ECANCELED, ECHILD, ECONNABORTED, ECONNREFUSED, ECONNRESET, EDEADLK, EDESTADDRREQ, EDOM, EDQUOT, EEXIST, EFAULT, EFBIG, EHOSTUNREACH, EIDRM, EILSEQ, EINPROGRESS, EINTR, EINVAL, EIO, EISCONN, EISDIR, ELOOP, EMFILE, EMLINK, EMSGSIZE, EMULTIHOP, ENAMETOOLONG, ENETDOWN, ENETRESET, ENETUNREACH, ENFILE, ENOBUFS, ENODATA, ENODEV, ENOENT, ENOEXEC, ENOLCK, ENOLINK, ENOMEM, ENOMSG, ENOPROTOOPT, ENOSPC, ENOSR, ENOSTR, ENOSYS, ENOTCONN, ENOTDIR, ENOTEMPTY, ENOTSOCK, ENOTSUP, ENOTTY, ENXIO, EOPNOTSUPP, EOVERFLOW, EPERM, EPIPE, EPROTO, EPROTONOSUPPORT, EPROTOTYPE, ERANGE, EROFS, ESPIPE, ESRCH, ESTALE, ETIME, ETIMEDOUT, ETXTBSY, EWOULDBLOCK, EXDEV, SIGHUP, SIGINT, SIGQUIT, SIGILL, SIGTRAP, SIGABRT, SIGIOT, SIGBUS, SIGFPE, SIGKILL, SIGUSR1, SIGSEGV, SIGUSR2, SIGPIPE, SIGALRM, SIGTERM, SIGCHLD, SIGCONT, SIGSTOP, SIGTSTP, SIGTTIN, SIGTTOU, SIGURG, SIGXCPU, SIGXFSZ, SIGVTALRM, SIGPROF, SIGWINCH, SIGIO, SIGSYS, SSL_OP_ALL, SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION, SSL_OP_CIPHER_SERVER_PREFERENCE, SSL_OP_CISCO_ANYCONNECT, SSL_OP_COOKIE_EXCHANGE, SSL_OP_CRYPTOPRO_TLSEXT_BUG, SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS, SSL_OP_EPHEMERAL_RSA, SSL_OP_LEGACY_SERVER_CONNECT, SSL_OP_MICROSOFT_BIG_SSLV3_BUFFER, SSL_OP_MICROSOFT_SESS_ID_BUG, SSL_OP_MSIE_SSLV2_RSA_PADDING, SSL_OP_NETSCAPE_CA_DN_BUG, SSL_OP_NETSCAPE_CHALLENGE_BUG, SSL_OP_NETSCAPE_DEMO_CIPHER_CHANGE_BUG, SSL_OP_NETSCAPE_REUSE_CIPHER_CHANGE_BUG, SSL_OP_NO_COMPRESSION, SSL_OP_NO_QUERY_MTU, SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION, SSL_OP_NO_SSLv2, SSL_OP_NO_SSLv3, SSL_OP_NO_TICKET, SSL_OP_NO_TLSv1, SSL_OP_NO_TLSv1_1, SSL_OP_NO_TLSv1_2, SSL_OP_PKCS1_CHECK_1, SSL_OP_PKCS1_CHECK_2, SSL_OP_SINGLE_DH_USE, SSL_OP_SINGLE_ECDH_USE, SSL_OP_SSLEAY_080_CLIENT_DH_BUG, SSL_OP_SSLREF2_REUSE_CERT_TYPE_BUG, SSL_OP_TLS_BLOCK_PADDING_BUG, SSL_OP_TLS_D5_BUG, SSL_OP_TLS_ROLLBACK_BUG, ENGINE_METHOD_DSA, ENGINE_METHOD_DH, ENGINE_METHOD_RAND, ENGINE_METHOD_ECDH, ENGINE_METHOD_ECDSA, ENGINE_METHOD_CIPHERS, ENGINE_METHOD_DIGESTS, ENGINE_METHOD_STORE, ENGINE_METHOD_PKEY_METHS, ENGINE_METHOD_PKEY_ASN1_METHS, ENGINE_METHOD_ALL, ENGINE_METHOD_NONE, DH_CHECK_P_NOT_SAFE_PRIME, DH_CHECK_P_NOT_PRIME, DH_UNABLE_TO_CHECK_GENERATOR, DH_NOT_SUITABLE_GENERATOR, NPN_ENABLED, RSA_PKCS1_PADDING, RSA_SSLV23_PADDING, RSA_NO_PADDING, RSA_PKCS1_OAEP_PADDING, RSA_X931_PADDING, RSA_PKCS1_PSS_PADDING, POINT_CONVERSION_COMPRESSED, POINT_CONVERSION_UNCOMPRESSED, POINT_CONVERSION_HYBRID, F_OK, R_OK, W_OK, X_OK, UV_UDP_REUSEADDR, default */
-/***/ (function(module) {
-
-module.exports = {"O_RDONLY":0,"O_WRONLY":1,"O_RDWR":2,"S_IFMT":61440,"S_IFREG":32768,"S_IFDIR":16384,"S_IFCHR":8192,"S_IFBLK":24576,"S_IFIFO":4096,"S_IFLNK":40960,"S_IFSOCK":49152,"O_CREAT":512,"O_EXCL":2048,"O_NOCTTY":131072,"O_TRUNC":1024,"O_APPEND":8,"O_DIRECTORY":1048576,"O_NOFOLLOW":256,"O_SYNC":128,"O_SYMLINK":2097152,"O_NONBLOCK":4,"S_IRWXU":448,"S_IRUSR":256,"S_IWUSR":128,"S_IXUSR":64,"S_IRWXG":56,"S_IRGRP":32,"S_IWGRP":16,"S_IXGRP":8,"S_IRWXO":7,"S_IROTH":4,"S_IWOTH":2,"S_IXOTH":1,"E2BIG":7,"EACCES":13,"EADDRINUSE":48,"EADDRNOTAVAIL":49,"EAFNOSUPPORT":47,"EAGAIN":35,"EALREADY":37,"EBADF":9,"EBADMSG":94,"EBUSY":16,"ECANCELED":89,"ECHILD":10,"ECONNABORTED":53,"ECONNREFUSED":61,"ECONNRESET":54,"EDEADLK":11,"EDESTADDRREQ":39,"EDOM":33,"EDQUOT":69,"EEXIST":17,"EFAULT":14,"EFBIG":27,"EHOSTUNREACH":65,"EIDRM":90,"EILSEQ":92,"EINPROGRESS":36,"EINTR":4,"EINVAL":22,"EIO":5,"EISCONN":56,"EISDIR":21,"ELOOP":62,"EMFILE":24,"EMLINK":31,"EMSGSIZE":40,"EMULTIHOP":95,"ENAMETOOLONG":63,"ENETDOWN":50,"ENETRESET":52,"ENETUNREACH":51,"ENFILE":23,"ENOBUFS":55,"ENODATA":96,"ENODEV":19,"ENOENT":2,"ENOEXEC":8,"ENOLCK":77,"ENOLINK":97,"ENOMEM":12,"ENOMSG":91,"ENOPROTOOPT":42,"ENOSPC":28,"ENOSR":98,"ENOSTR":99,"ENOSYS":78,"ENOTCONN":57,"ENOTDIR":20,"ENOTEMPTY":66,"ENOTSOCK":38,"ENOTSUP":45,"ENOTTY":25,"ENXIO":6,"EOPNOTSUPP":102,"EOVERFLOW":84,"EPERM":1,"EPIPE":32,"EPROTO":100,"EPROTONOSUPPORT":43,"EPROTOTYPE":41,"ERANGE":34,"EROFS":30,"ESPIPE":29,"ESRCH":3,"ESTALE":70,"ETIME":101,"ETIMEDOUT":60,"ETXTBSY":26,"EWOULDBLOCK":35,"EXDEV":18,"SIGHUP":1,"SIGINT":2,"SIGQUIT":3,"SIGILL":4,"SIGTRAP":5,"SIGABRT":6,"SIGIOT":6,"SIGBUS":10,"SIGFPE":8,"SIGKILL":9,"SIGUSR1":30,"SIGSEGV":11,"SIGUSR2":31,"SIGPIPE":13,"SIGALRM":14,"SIGTERM":15,"SIGCHLD":20,"SIGCONT":19,"SIGSTOP":17,"SIGTSTP":18,"SIGTTIN":21,"SIGTTOU":22,"SIGURG":16,"SIGXCPU":24,"SIGXFSZ":25,"SIGVTALRM":26,"SIGPROF":27,"SIGWINCH":28,"SIGIO":23,"SIGSYS":12,"SSL_OP_ALL":2147486719,"SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION":262144,"SSL_OP_CIPHER_SERVER_PREFERENCE":4194304,"SSL_OP_CISCO_ANYCONNECT":32768,"SSL_OP_COOKIE_EXCHANGE":8192,"SSL_OP_CRYPTOPRO_TLSEXT_BUG":2147483648,"SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS":2048,"SSL_OP_EPHEMERAL_RSA":0,"SSL_OP_LEGACY_SERVER_CONNECT":4,"SSL_OP_MICROSOFT_BIG_SSLV3_BUFFER":32,"SSL_OP_MICROSOFT_SESS_ID_BUG":1,"SSL_OP_MSIE_SSLV2_RSA_PADDING":0,"SSL_OP_NETSCAPE_CA_DN_BUG":536870912,"SSL_OP_NETSCAPE_CHALLENGE_BUG":2,"SSL_OP_NETSCAPE_DEMO_CIPHER_CHANGE_BUG":1073741824,"SSL_OP_NETSCAPE_REUSE_CIPHER_CHANGE_BUG":8,"SSL_OP_NO_COMPRESSION":131072,"SSL_OP_NO_QUERY_MTU":4096,"SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION":65536,"SSL_OP_NO_SSLv2":16777216,"SSL_OP_NO_SSLv3":33554432,"SSL_OP_NO_TICKET":16384,"SSL_OP_NO_TLSv1":67108864,"SSL_OP_NO_TLSv1_1":268435456,"SSL_OP_NO_TLSv1_2":134217728,"SSL_OP_PKCS1_CHECK_1":0,"SSL_OP_PKCS1_CHECK_2":0,"SSL_OP_SINGLE_DH_USE":1048576,"SSL_OP_SINGLE_ECDH_USE":524288,"SSL_OP_SSLEAY_080_CLIENT_DH_BUG":128,"SSL_OP_SSLREF2_REUSE_CERT_TYPE_BUG":0,"SSL_OP_TLS_BLOCK_PADDING_BUG":512,"SSL_OP_TLS_D5_BUG":256,"SSL_OP_TLS_ROLLBACK_BUG":8388608,"ENGINE_METHOD_DSA":2,"ENGINE_METHOD_DH":4,"ENGINE_METHOD_RAND":8,"ENGINE_METHOD_ECDH":16,"ENGINE_METHOD_ECDSA":32,"ENGINE_METHOD_CIPHERS":64,"ENGINE_METHOD_DIGESTS":128,"ENGINE_METHOD_STORE":256,"ENGINE_METHOD_PKEY_METHS":512,"ENGINE_METHOD_PKEY_ASN1_METHS":1024,"ENGINE_METHOD_ALL":65535,"ENGINE_METHOD_NONE":0,"DH_CHECK_P_NOT_SAFE_PRIME":2,"DH_CHECK_P_NOT_PRIME":1,"DH_UNABLE_TO_CHECK_GENERATOR":4,"DH_NOT_SUITABLE_GENERATOR":8,"NPN_ENABLED":1,"RSA_PKCS1_PADDING":1,"RSA_SSLV23_PADDING":2,"RSA_NO_PADDING":3,"RSA_PKCS1_OAEP_PADDING":4,"RSA_X931_PADDING":5,"RSA_PKCS1_PSS_PADDING":6,"POINT_CONVERSION_COMPRESSED":2,"POINT_CONVERSION_UNCOMPRESSED":4,"POINT_CONVERSION_HYBRID":6,"F_OK":0,"R_OK":4,"W_OK":2,"X_OK":1,"UV_UDP_REUSEADDR":4};
-
-/***/ }),
-
 /***/ "./node_modules/create-react-context/lib/implementation.js":
 /*!*****************************************************************!*\
   !*** ./node_modules/create-react-context/lib/implementation.js ***!
@@ -65769,11 +65758,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ProdeApp; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! constants */ "./node_modules/constants-browserify/constants.json");
-var constants__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! constants */ "./node_modules/constants-browserify/constants.json", 1);
+/* harmony import */ var _ProdeTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ProdeTable */ "./resources/js/components/ProdeTable.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -65791,8 +65781,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 
 
 
@@ -65808,320 +65796,6 @@ function (_Component) {
     _classCallCheck(this, ProdeApp);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(ProdeApp).call(this));
-
-    _defineProperty(_assertThisInitialized(_this), "handleWinner", function (winner, match) {
-      switch (match) {
-        case 1:
-          _this.setState(function (state) {
-            return {
-              cuartos1: state.cuartos1 = winner
-            };
-          });
-
-          _this.adjust(1);
-
-          break;
-
-        case 2:
-          _this.setState(function (state) {
-            return {
-              cuartos2: state.cuartos2 = winner
-            };
-          });
-
-          _this.adjust(1);
-
-          break;
-
-        case 3:
-          _this.setState(function (state) {
-            return {
-              cuartos3: state.cuartos3 = winner
-            };
-          });
-
-          _this.adjust(2);
-
-          break;
-
-        case 4:
-          _this.setState(function (state) {
-            return {
-              cuartos4: state.cuartos4 = winner
-            };
-          });
-
-          _this.adjust(2);
-
-          break;
-
-        case 5:
-          _this.setState(function (state) {
-            return {
-              cuartos5: state.cuartos5 = winner
-            };
-          });
-
-          _this.adjust(3);
-
-          break;
-
-        case 6:
-          _this.setState(function (state) {
-            return {
-              cuartos6: state.cuartos6 = winner
-            };
-          });
-
-          _this.adjust(3);
-
-          break;
-
-        case 7:
-          _this.setState(function (state) {
-            return {
-              cuartos7: state.cuartos7 = winner
-            };
-          });
-
-          _this.adjust(4);
-
-          break;
-
-        case 8:
-          _this.setState(function (state) {
-            return {
-              cuartos8: state.cuartos8 = winner
-            };
-          });
-
-          _this.adjust(4);
-
-          break;
-
-        case 9:
-          _this.setState(function (state) {
-            return {
-              semi1: state.semi1 = winner
-            };
-          });
-
-          _this.adjust(5);
-
-          break;
-
-        case 10:
-          _this.setState(function (state) {
-            return {
-              semi2: state.semi2 = winner
-            };
-          });
-
-          _this.adjust(5);
-
-          break;
-
-        case 11:
-          _this.setState(function (state) {
-            return {
-              semi3: state.semi3 = winner
-            };
-          });
-
-          _this.adjust(6);
-
-          break;
-
-        case 12:
-          _this.setState(function (state) {
-            return {
-              semi4: state.semi4 = winner
-            };
-          });
-
-          _this.adjust(6);
-
-          break;
-
-        case 13:
-          _this.setState(function (state) {
-            return {
-              final1: state.final1 = winner
-            };
-          });
-
-          _this.adjust(7);
-
-          break;
-
-        case 14:
-          _this.setState(function (state) {
-            return {
-              final2: state.final2 = winner
-            };
-          });
-
-          _this.adjust(7);
-
-          break;
-
-        case 15:
-          _this.setState(function (state) {
-            return {
-              campeon: state.campeon = winner
-            };
-          });
-
-          break;
-      }
-    });
-
-    _defineProperty(_assertThisInitialized(_this), "adjust", function (partido) {
-      switch (partido) {
-        case 1:
-          if (_this.state.semi1 != '') {
-            _this.setState(function (state) {
-              return {
-                semi1: state.semi1 = ''
-              };
-            });
-
-            if (_this.state.final1 != '') {
-              _this.setState(function (state) {
-                return {
-                  final1: state.final1 = ''
-                };
-              });
-
-              if (_this.state.campeon != '') _this.setState(function (state) {
-                return {
-                  campeon: state.campeon = ''
-                };
-              });
-            }
-          }
-
-          break;
-
-        case 2:
-          if (_this.state.semi2 != '') {
-            _this.setState(function (state) {
-              return {
-                semi2: state.semi2 = ''
-              };
-            });
-
-            if (_this.state.final1 != '') {
-              _this.setState(function (state) {
-                return {
-                  final1: state.final1 = ''
-                };
-              });
-
-              if (_this.state.campeon != '') _this.setState(function (state) {
-                return {
-                  campeon: state.campeon = ''
-                };
-              });
-            }
-          }
-
-          break;
-
-        case 3:
-          if (_this.state.semi3 != '') {
-            _this.setState(function (state) {
-              return {
-                semi3: state.semi3 = ''
-              };
-            });
-
-            if (_this.state.final3 != '') {
-              _this.setState(function (state) {
-                return {
-                  final2: state.final2 = ''
-                };
-              });
-
-              if (_this.state.campeon != '') _this.setState(function (state) {
-                return {
-                  campeon: state.campeon = ''
-                };
-              });
-            }
-          }
-
-          break;
-
-        case 4:
-          if (_this.state.semi4 != '') {
-            _this.setState(function (state) {
-              return {
-                semi4: state.semi4 = ''
-              };
-            });
-
-            if (_this.state.final4 != '') {
-              _this.setState(function (state) {
-                return {
-                  final2: state.final2 = ''
-                };
-              });
-
-              if (_this.state.campeon != '') _this.setState(function (state) {
-                return {
-                  campeon: state.campeon = ''
-                };
-              });
-            }
-          }
-
-          break;
-
-        case 5:
-          if (_this.state.final1 != '') {
-            _this.setState(function (state) {
-              return {
-                final1: state.final1 = ''
-              };
-            });
-
-            if (_this.state.campeon != '') _this.setState(function (state) {
-              return {
-                campeon: state.campeon = ''
-              };
-            });
-          }
-
-          break;
-
-        case 6:
-          if (_this.state.final2 != '') {
-            _this.setState(function (state) {
-              return {
-                final2: state.final2 = ''
-              };
-            });
-
-            if (_this.state.campeon != '') _this.setState(function (state) {
-              return {
-                campeon: state.campeon = ''
-              };
-            });
-          }
-
-          break;
-
-        case 7:
-          if (_this.state.campeon != '') _this.setState(function (state) {
-            return {
-              campeon: state.campeon = ''
-            };
-          });
-          break;
-      }
-    });
-
     _this.state = {
       idProde: null,
       prodes: [],
@@ -66140,14 +65814,17 @@ function (_Component) {
       semi4: '',
       final1: '',
       final2: '',
-      campeon: ''
+      campeon: '',
+      mount: 0
     };
-    _this.handleWinner = _this.handleWinner.bind(_assertThisInitialized(_this));
+    _this.handleFinal = _this.handleFinal.bind(_assertThisInitialized(_this));
+    _this.handleSemis = _this.handleSemis.bind(_assertThisInitialized(_this));
+    _this.handleCuartos = _this.handleCuartos.bind(_assertThisInitialized(_this));
+    _this.handleOctavos = _this.handleOctavos.bind(_assertThisInitialized(_this));
     _this.save = _this.save.bind(_assertThisInitialized(_this));
     _this.clear = _this.clear.bind(_assertThisInitialized(_this));
     _this["delete"] = _this["delete"].bind(_assertThisInitialized(_this));
     _this.update = _this.update.bind(_assertThisInitialized(_this));
-    _this.adjust = _this.adjust.bind(_assertThisInitialized(_this));
     _this.search = _this.search.bind(_assertThisInitialized(_this));
     return _this;
   }
@@ -66161,26 +65838,51 @@ function (_Component) {
       window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
       window.axios.defaults.headers.common['Authorization'] = 'Bearer ' + api_token.content;
       var self = this;
-      axios.get('/api/teams').then(function (response) {
+      axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/teams').then(function (response) {
         self.setState({
           octavos: response.data
         });
       })["catch"](function (error) {
         console.log(error);
       });
-      axios.get('/api/prodes').then(function (response) {
+      axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/prodes').then(function (response) {
         self.setState({
           prodes: response.data
         });
       })["catch"](function (error) {
         console.log(error);
       });
+
+      if (localStorage.length == 0) {
+        self.setState({
+          mount: 1
+        });
+      } else {
+        self.setState({
+          cuartos1: localStorage.getItem('cuartos1'),
+          cuartos2: localStorage.getItem('cuartos2'),
+          cuartos3: localStorage.getItem('cuartos3'),
+          cuartos4: localStorage.getItem('cuartos4'),
+          cuartos5: localStorage.getItem('cuartos5'),
+          cuartos6: localStorage.getItem('cuartos6'),
+          cuartos7: localStorage.getItem('cuartos7'),
+          cuartos8: localStorage.getItem('cuartos8'),
+          semi1: localStorage.getItem('semi1'),
+          semi2: localStorage.getItem('semi2'),
+          semi3: localStorage.getItem('semi3'),
+          semi4: localStorage.getItem('semi4'),
+          final1: localStorage.getItem('final1'),
+          final2: localStorage.getItem('final2'),
+          campeon: localStorage.getItem('campeon'),
+          mount: 1
+        });
+      }
     }
   }, {
     key: "save",
     value: function save() {
       var self = this;
-      axios.post('/api/prodes', {
+      axios__WEBPACK_IMPORTED_MODULE_2___default.a.post('/api/prodes', {
         data: this.state
       }).then(function (response) {
         self.setState({
@@ -66195,7 +65897,7 @@ function (_Component) {
     key: "update",
     value: function update() {
       if (this.state.idProde != null) {
-        axios.put('/api/prodes/' + this.state.idProde, {
+        axios__WEBPACK_IMPORTED_MODULE_2___default.a.put('/api/prodes/' + this.state.idProde, {
           data: this.state
         }).then(function (response) {
           alert('Prode actualizado.');
@@ -66210,7 +65912,7 @@ function (_Component) {
       var self = this;
 
       if (this.state.idProde != null) {
-        axios["delete"]('/api/prodes/' + this.state.idProde, {}).then(function (response) {
+        axios__WEBPACK_IMPORTED_MODULE_2___default.a["delete"]('/api/prodes/' + this.state.idProde, {}).then(function (response) {
           self.setState({
             prodes: response.data
           });
@@ -66246,7 +65948,7 @@ function (_Component) {
     value: function search(e) {
       var id = e.target.id;
       var self = this;
-      axios.get('/api/prodes/' + id).then(function (response) {
+      axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/prodes/' + id).then(function (response) {
         self.setState({
           cuartos1: response.data[0]['cuartos1'],
           cuartos2: response.data[0]['cuartos2'],
@@ -66270,9 +65972,88 @@ function (_Component) {
       });
     }
   }, {
+    key: "handleOctavos",
+    value: function handleOctavos(index) {
+      var winner = this.state.octavos[index];
+      var newIndex = Math.floor(index / 2) + 1;
+      var cuartosAux = 'cuartos'.concat(newIndex);
+      this.setState(function (state) {
+        return _defineProperty({}, cuartosAux.toString(), state.cuartosAux = winner);
+      });
+      var semisAux = 'semi'.concat(Math.floor(index / 4) + 1);
+
+      if (this.state[semisAux] != '') {
+        this.handleCuartos(newIndex - 1);
+      }
+    }
+  }, {
+    key: "handleCuartos",
+    value: function handleCuartos(index) {
+      var newIndex = Math.floor(index / 2) + 1;
+      var winAux = 'cuartos'.concat(index + 1);
+      var winner = this.state[winAux];
+      var semiAux = 'semi'.concat(newIndex);
+      this.setState(function (state) {
+        return _defineProperty({}, semiAux.toString(), state.semiAux = winner);
+      });
+      var finalAux = 'final'.concat(Math.floor(index / 4) + 1);
+
+      if (this.state[finalAux] != '') {
+        this.handleSemis(newIndex - 1);
+      }
+    }
+  }, {
+    key: "handleSemis",
+    value: function handleSemis(index) {
+      var newIndex = Math.floor(index / 2) + 1;
+      var winAux = 'semi'.concat(index + 1);
+      var winner = this.state[winAux];
+      var semiAux = 'final'.concat(newIndex);
+      this.setState(function (state) {
+        return _defineProperty({}, semiAux.toString(), state.semiAux = winner);
+      });
+
+      if (this.state.campeon != '') {
+        this.handleFinal(newIndex - 1);
+      }
+    }
+  }, {
+    key: "handleFinal",
+    value: function handleFinal(index) {
+      var winAux = 'final'.concat(index + 1);
+      var winner = this.state[winAux];
+      this.setState(function (state) {
+        return {
+          campeon: state.campeon = winner
+        };
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
       var _this2 = this;
+
+      if (this.state.mount != 0) {
+        if (this.state.idProde != null) {
+          localStorage.clear();
+        } else {
+          localStorage.setItem('cuartos1', this.state.cuartos1);
+          localStorage.setItem('cuartos2', this.state.cuartos2);
+          localStorage.setItem('cuartos3', this.state.cuartos3);
+          localStorage.setItem('cuartos4', this.state.cuartos4);
+          localStorage.setItem('cuartos5', this.state.cuartos5);
+          localStorage.setItem('cuartos6', this.state.cuartos6);
+          localStorage.setItem('cuartos7', this.state.cuartos7);
+          localStorage.setItem('cuartos8', this.state.cuartos8);
+          localStorage.setItem('semi1', this.state.semi1);
+          localStorage.setItem('semi2', this.state.semi2);
+          localStorage.setItem('semi3', this.state.semi3);
+          localStorage.setItem('semi4', this.state.semi4);
+          localStorage.setItem('final1', this.state.final1);
+          localStorage.setItem('final2', this.state.final2);
+          localStorage.setItem('campeon', this.state.campeon);
+        }
+      }
 
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
         className: "hero"
@@ -66305,14 +66086,14 @@ function (_Component) {
         className: "matchup"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.octavos[0], 1);
+          return _this2.handleOctavos(0);
         },
         className: "button"
       }, this.state.octavos[0], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.octavos[1], 1);
+          return _this2.handleOctavos(1);
         },
         className: "button"
       }, this.state.octavos[1], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -66321,14 +66102,14 @@ function (_Component) {
         className: "matchup"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.octavos[2], 2);
+          return _this2.handleOctavos(2);
         },
         className: "button"
       }, this.state.octavos[2], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
       }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.octavos[3], 2);
+          return _this2.handleOctavos(3);
         },
         className: "button"
       }, this.state.octavos[3], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -66337,14 +66118,14 @@ function (_Component) {
         className: "matchup"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.octavos[4], 3);
+          return _this2.handleOctavos(4);
         },
         className: "button"
       }, this.state.octavos[4], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
       }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.octavos[5], 3);
+          return _this2.handleOctavos(5);
         },
         className: "button"
       }, this.state.octavos[5], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -66353,14 +66134,14 @@ function (_Component) {
         className: "matchup"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.octavos[6], 4);
+          return _this2.handleOctavos(6);
         },
         className: "button"
       }, this.state.octavos[6], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
       }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.octavos[7], 4);
+          return _this2.handleOctavos(7);
         },
         className: "button"
       }, this.state.octavos[7], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -66375,14 +66156,14 @@ function (_Component) {
         className: "matchup"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.cuartos1, 9);
+          return _this2.handleCuartos(0);
         },
         className: "button"
       }, this.state.cuartos1, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
       }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.cuartos2, 9);
+          return _this2.handleCuartos(1);
         },
         className: "button"
       }, this.state.cuartos2, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -66391,14 +66172,14 @@ function (_Component) {
         className: "matchup"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.cuartos3, 10);
+          return _this2.handleCuartos(2);
         },
         className: "button"
       }, this.state.cuartos3, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
       }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.cuartos4, 10);
+          return _this2.handleCuartos(3);
         },
         className: "button"
       }, this.state.cuartos4, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -66415,14 +66196,14 @@ function (_Component) {
         className: "matchup championship"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.semi1, 13);
+          return _this2.handleSemis(0);
         },
         className: "button"
       }, this.state.semi1, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "vote-count"
       }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.semi2, 13);
+          return _this2.handleSemis(1);
         },
         className: "button"
       }, this.state.semi2, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -66437,14 +66218,14 @@ function (_Component) {
         className: "matchup championship"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.semi3, 14);
+          return _this2.handleSemis(2);
         },
         className: "button"
       }, this.state.semi3, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "vote-count"
       }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.semi4, 14);
+          return _this2.handleSemis(3);
         },
         className: "button"
       }, this.state.semi4, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -66459,14 +66240,14 @@ function (_Component) {
         className: "matchup championship"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.final1, 15);
+          return _this2.handleFinal(0);
         },
         className: "button"
       }, this.state.final1, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "vote-count"
       }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.final2, 15);
+          return _this2.handleFinal(1);
         },
         className: "button"
       }, this.state.final2, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -66494,14 +66275,14 @@ function (_Component) {
         className: "matchup"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.cuartos5, 11);
+          return _this2.handleCuartos(4);
         },
         className: "button"
       }, this.state.cuartos5, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
       }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.cuartos6, 11);
+          return _this2.handleCuartos(5);
         },
         className: "button"
       }, this.state.cuartos6, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -66510,14 +66291,14 @@ function (_Component) {
         className: "matchup"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.cuartos7, 12);
+          return _this2.handleCuartos(6);
         },
         className: "button"
       }, this.state.cuartos7, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
       }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.cuartos8, 12);
+          return _this2.handleCuartos(7);
         },
         className: "button"
       }, this.state.cuartos8, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -66532,14 +66313,14 @@ function (_Component) {
         className: "matchup"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.octavos[8], 5);
+          return _this2.handleOctavos(8);
         },
         className: "button"
       }, this.state.octavos[8], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
       }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.octavos[9], 5);
+          return _this2.handleOctavos(9);
         },
         className: "button"
       }, this.state.octavos[9], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -66548,14 +66329,14 @@ function (_Component) {
         className: "matchup"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.octavos[10], 6);
+          return _this2.handleOctavos(10);
         },
         className: "button"
       }, this.state.octavos[10], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
       }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.octavos[11], 6);
+          return _this2.handleOctavos(11);
         },
         className: "button"
       }, this.state.octavos[11], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -66564,14 +66345,14 @@ function (_Component) {
         className: "matchup"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.octavos[12], 7);
+          return _this2.handleOctavos(12);
         },
         className: "button"
       }, this.state.octavos[12], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
       }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.octavos[13], 7);
+          return _this2.handleOctavos(13);
         },
         className: "button"
       }, this.state.octavos[13], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -66580,14 +66361,14 @@ function (_Component) {
         className: "matchup"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.octavos[14], 8);
+          return _this2.handleOctavos(14);
         },
         className: "button"
       }, this.state.octavos[14], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
       }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         onClick: function onClick() {
-          return _this2.handleWinner(_this2.state.octavos[15], 8);
+          return _this2.handleOctavos(15);
         },
         className: "button"
       }, this.state.octavos[15], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -66629,6 +66410,52 @@ function (_Component) {
   }]);
 
   return ProdeApp;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/ProdeTable.js":
+/*!***********************************************!*\
+  !*** ./resources/js/components/ProdeTable.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ProdeTable; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+
+
+var ProdeTable =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(ProdeTable, _Component);
+
+  function ProdeTable() {
+    _classCallCheck(this, ProdeTable);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(ProdeTable).apply(this, arguments));
+  }
+
+  return ProdeTable;
 }(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
 
 
