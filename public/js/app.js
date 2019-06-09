@@ -65759,10 +65759,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _ProdeTable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ProdeTable */ "./resources/js/components/ProdeTable.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -65782,7 +65780,6 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
 
 
 
@@ -65841,14 +65838,14 @@ function (_Component) {
       window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
       window.axios.defaults.headers.common['Authorization'] = 'Bearer ' + api_token.content;
       var self = this;
-      axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('/api/teams').then(function (response) {
+      axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/teams').then(function (response) {
         self.setState({
           octavos: response.data
         });
       })["catch"](function (error) {
         console.log(error);
       });
-      axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('/api/prodes').then(function (response) {
+      axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/prodes').then(function (response) {
         self.setState({
           prodes: response.data
         });
@@ -65885,7 +65882,7 @@ function (_Component) {
     key: "save",
     value: function save() {
       var self = this;
-      axios__WEBPACK_IMPORTED_MODULE_3___default.a.post('/api/prodes', {
+      axios__WEBPACK_IMPORTED_MODULE_2___default.a.post('/api/prodes', {
         data: this.state
       }).then(function (response) {
         self.setState({
@@ -65900,7 +65897,7 @@ function (_Component) {
     key: "update",
     value: function update() {
       if (this.state.idProde != null) {
-        axios__WEBPACK_IMPORTED_MODULE_3___default.a.put('/api/prodes/' + this.state.idProde, {
+        axios__WEBPACK_IMPORTED_MODULE_2___default.a.put('/api/prodes/' + this.state.idProde, {
           data: this.state
         }).then(function (response) {
           alert('Prode actualizado.');
@@ -65915,7 +65912,7 @@ function (_Component) {
       var self = this;
 
       if (this.state.idProde != null) {
-        axios__WEBPACK_IMPORTED_MODULE_3___default.a["delete"]('/api/prodes/' + this.state.idProde, {}).then(function (response) {
+        axios__WEBPACK_IMPORTED_MODULE_2___default.a["delete"]('/api/prodes/' + this.state.idProde, {}).then(function (response) {
           self.setState({
             prodes: response.data
           });
@@ -65951,7 +65948,7 @@ function (_Component) {
     value: function search(e) {
       var id = e.target.id;
       var self = this;
-      axios__WEBPACK_IMPORTED_MODULE_3___default.a.get('/api/prodes/' + id).then(function (response) {
+      axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/prodes/' + id).then(function (response) {
         self.setState({
           cuartos1: response.data[0]['cuartos1'],
           cuartos2: response.data[0]['cuartos2'],
@@ -66407,8 +66404,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ProdeTable; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -66426,7 +66421,6 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
 
 
 

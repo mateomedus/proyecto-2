@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import ProdeTable from './ProdeTable';
-import ReactDOM from 'react-dom';
 import axios from 'axios';
 
 export default class ProdeApp extends Component{
@@ -382,7 +381,6 @@ export default class ProdeApp extends Component{
                             update={this.update}
                             delete={this.delete}
                             search={this.search}
-                            
                             />
                 
             </section>
