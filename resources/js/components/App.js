@@ -9,7 +9,6 @@ class App extends Component {
             <BrowserRouter>
                 <Switch>
                     <Route exact path="/" component={ProdeApp}/>
-                    {/* <Route component={NotFound}/> */}
                 </Switch>
             </BrowserRouter>
         )
