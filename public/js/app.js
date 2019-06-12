@@ -65978,13 +65978,17 @@ function (_Component) {
       var newIndex = Math.floor(index / 2) + 1;
       var cuartosAux = 'cuartos'.concat(newIndex);
       this.setState(function (state) {
-        return _defineProperty({}, cuartosAux.toString(), state.cuartosAux = winner);
+        return _defineProperty({}, cuartosAux, state.cuartosAux = winner);
       });
-      var semisAux = 'semi'.concat(Math.floor(index / 4) + 1);
+      var indexS = Math.floor(index / 4) + 1;
+      var indexf = Math.floor(index / 8) + 1;
+      var semiAux = 'semi'.concat(indexS);
+      var finalAux = 'final'.concat(indexf);
+      this.setState(function (state) {
+        var _ref2;
 
-      if (this.state[semisAux] != '') {
-        this.handleCuartos(newIndex - 1);
-      }
+        return _ref2 = {}, _defineProperty(_ref2, semiAux, state.semiAux = ''), _defineProperty(_ref2, finalAux, state.finalAux = ''), _defineProperty(_ref2, "campeon", state.campeon = ''), _ref2;
+      });
     }
   }, {
     key: "handleCuartos",
@@ -65994,13 +65998,15 @@ function (_Component) {
       var winner = this.state[winAux];
       var semiAux = 'semi'.concat(newIndex);
       this.setState(function (state) {
-        return _defineProperty({}, semiAux.toString(), state.semiAux = winner);
+        return _defineProperty({}, semiAux, state.semiAux = winner);
       });
-      var finalAux = 'final'.concat(Math.floor(index / 4) + 1);
+      var indexf = Math.floor(index / 4) + 1;
+      var finalAux = 'final'.concat(indexf);
+      this.setState(function (state) {
+        var _ref4;
 
-      if (this.state[finalAux] != '') {
-        this.handleSemis(newIndex - 1);
-      }
+        return _ref4 = {}, _defineProperty(_ref4, finalAux, state.finalAux = ''), _defineProperty(_ref4, "campeon", state.campeon = ''), _ref4;
+      });
     }
   }, {
     key: "handleSemis",
@@ -66008,14 +66014,15 @@ function (_Component) {
       var newIndex = Math.floor(index / 2) + 1;
       var winAux = 'semi'.concat(index + 1);
       var winner = this.state[winAux];
-      var semiAux = 'final'.concat(newIndex);
+      var finalAux = 'final'.concat(newIndex);
       this.setState(function (state) {
-        return _defineProperty({}, semiAux.toString(), state.semiAux = winner);
+        return _defineProperty({}, finalAux, state.finalAux = winner);
       });
-
-      if (this.state.campeon != '') {
-        this.handleFinal(newIndex - 1);
-      }
+      this.setState(function (state) {
+        return {
+          campeon: state.campeon = ''
+        };
+      });
     }
   }, {
     key: "handleFinal",
@@ -66084,14 +66091,14 @@ function (_Component) {
         className: "date"
       }, "Julio 23-31")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "matchup"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleOctavos(0);
         },
         className: "button"
       }, this.state.octavos[0], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleOctavos(1);
         },
@@ -66100,14 +66107,14 @@ function (_Component) {
         className: "score"
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "matchup"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleOctavos(2);
         },
         className: "button"
       }, this.state.octavos[2], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
-      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleOctavos(3);
         },
@@ -66116,14 +66123,14 @@ function (_Component) {
         className: "score"
       }, "\xA0"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "matchup"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleOctavos(4);
         },
         className: "button"
       }, this.state.octavos[4], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
-      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleOctavos(5);
         },
@@ -66132,14 +66139,14 @@ function (_Component) {
         className: "score"
       }, "\xA0"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "matchup"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleOctavos(6);
         },
         className: "button"
       }, this.state.octavos[6], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
-      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleOctavos(7);
         },
@@ -66154,14 +66161,14 @@ function (_Component) {
         className: "date"
       }, "Octubre 1")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "matchup"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleCuartos(0);
         },
         className: "button"
       }, this.state.cuartos1, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
-      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleCuartos(1);
         },
@@ -66170,14 +66177,14 @@ function (_Component) {
         className: "score"
       }, "\xA0"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "matchup"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleCuartos(2);
         },
         className: "button"
       }, this.state.cuartos3, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
-      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleCuartos(3);
         },
@@ -66194,14 +66201,14 @@ function (_Component) {
         className: "date"
       }, "Octubre 1")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "matchup championship"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleSemis(0);
         },
         className: "button"
       }, this.state.semi1, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "vote-count"
-      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleSemis(1);
         },
@@ -66216,14 +66223,14 @@ function (_Component) {
         className: "date"
       }, "Octubre 1")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "matchup championship"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleSemis(2);
         },
         className: "button"
       }, this.state.semi3, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "vote-count"
-      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleSemis(3);
         },
@@ -66238,14 +66245,14 @@ function (_Component) {
         className: "date"
       }, "Noviembre 23")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "matchup championship"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleFinal(0);
         },
         className: "button"
       }, this.state.final1, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "vote-count"
-      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleFinal(1);
         },
@@ -66258,7 +66265,7 @@ function (_Component) {
         className: "fa fa-trophy"
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "round-details"
-      }, "Campeon"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "Campeon"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         disabled: true,
         className: "button"
       }, this.state.campeon, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -66273,14 +66280,14 @@ function (_Component) {
         className: "date"
       }, "Octubre 1")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "matchup"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleCuartos(4);
         },
         className: "button"
       }, this.state.cuartos5, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
-      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleCuartos(5);
         },
@@ -66289,14 +66296,14 @@ function (_Component) {
         className: "score"
       }, "\xA0"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "matchup"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleCuartos(6);
         },
         className: "button"
       }, this.state.cuartos7, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
-      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleCuartos(7);
         },
@@ -66311,14 +66318,14 @@ function (_Component) {
         className: "date"
       }, "Agosto 1")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "matchup"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleOctavos(8);
         },
         className: "button"
       }, this.state.octavos[8], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
-      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleOctavos(9);
         },
@@ -66327,14 +66334,14 @@ function (_Component) {
         className: "score"
       }, "\xA0"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "matchup"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleOctavos(10);
         },
         className: "button"
       }, this.state.octavos[10], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
-      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleOctavos(11);
         },
@@ -66343,14 +66350,14 @@ function (_Component) {
         className: "score"
       }, "\xA0"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "matchup"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleOctavos(12);
         },
         className: "button"
       }, this.state.octavos[12], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
-      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleOctavos(13);
         },
@@ -66359,14 +66366,14 @@ function (_Component) {
         className: "score"
       }, "\xA0"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "matchup"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleOctavos(14);
         },
         className: "button"
       }, this.state.octavos[14], react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "score"
-      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "\xA0")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
           return _this2.handleOctavos(15);
         },
