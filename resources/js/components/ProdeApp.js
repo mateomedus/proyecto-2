@@ -264,17 +264,17 @@ export default class ProdeApp extends Component{
         <div>
             <header className="hero">
                 <div className="hero-wrap">
-                    <p className="intro" id="intro">copa</p>
-                        <h1 id="headline">libertadores</h1>
-                        <p className="year"><i className="fa fa-star"></i> 2019 <i className="fa fa-star"></i></p>
-                    <p>Prode</p>
+                    <p className="intro" id="intro">Juegos</p>
+                        <h1 id="headline">Píticos</h1>
+                        <p className="year"><i className="fa fa-star"></i> 2020 <i className="fa fa-star"></i></p>
+                    <p>Teatro Marcelo - Teatro Delfos</p>
                 </div>
             </header>
             <section id="bracket">
                 <div className="container">
                     <div className="split split-one">
                         <div className="round round-one">
-                            <div className="round-details">Octavos<br/><span className="date">Julio 23-31</span></div>    
+                            <div className="round-details">Octavos<br/><span className="date"></span></div>    
                             <ul className="matchup">
                                 <div onClick={() => this.handleOctavos(0)} className="button">{this.state.octavos[0]}<span className="score"></span></div>
                                 <div onClick={() => this.handleOctavos(1)} className="button">{this.state.octavos[1]}<span className="score"></span></div>
@@ -298,7 +298,7 @@ export default class ProdeApp extends Component{
                     
                         <div className="round round-two">
                             <br/>
-                            <div className="round-details">Cuartos<br/><span className="date">Octubre 1</span></div>          
+                            <div className="round-details">Cuartos<br/><span className="date"></span></div>          
                             <br/> <br/> 
                             <ul className="matchup">
                                 <div onClick={() => this.handleCuartos(0)} className="button">{this.state.cuartos1}<span className="score">&nbsp;</span></div>
@@ -314,7 +314,7 @@ export default class ProdeApp extends Component{
                     <div className="champion">
                         <br/><br/><br/> <br/> 
                         <div className="semis-l">
-                            <div className="round-details">Semifinal 1 <br/><span className="date">Octubre 1</span></div>     
+                            <div className="round-details">Semifinal 1 <br/><span className="date"></span></div>     
                             <ul className ="matchup championship">
                                 <div onClick={() => this.handleSemis(0)} className="button">{this.state.semi1}<span className="vote-count">&nbsp;</span></div>
                                 <div onClick={() => this.handleSemis(1)} className="button">{this.state.semi2}<span className="vote-count">&nbsp;</span></div>
@@ -322,14 +322,14 @@ export default class ProdeApp extends Component{
                         </div>
                         <br/><br/><br/><br/>
                         <div className="semis-r">       
-                            <div className="round-details">Semifinal 2 <br/><span className="date">Octubre 1</span></div>     
+                            <div className="round-details">Semifinal 2 <br/><span className="date"></span></div>     
                             <ul className ="matchup championship">
                                 <div onClick={() => this.handleSemis(2)} className="button">{this.state.semi3}<span className="vote-count">&nbsp;</span></div>
                                 <div onClick={() => this.handleSemis(3)} className="button">{this.state.semi4}<span className="vote-count">&nbsp;</span></div>
                             </ul>
                         </div>  
                         <div className="final">
-                            <div className="round-details">Final <br/><span className="date">Noviembre 23</span></div>      
+                            <div className="round-details">Final <br/><span className="date"></span></div>      
                             <ul className ="matchup championship">
                                 <div onClick={() => this.handleFinal(0)} className="button">{this.state.final1}<span className="vote-count">&nbsp;</span></div>
                                 <div onClick={() => this.handleFinal(1)} className="button">{this.state.final2}<span className="vote-count">&nbsp;</span></div>
@@ -345,7 +345,7 @@ export default class ProdeApp extends Component{
                     <div className="split split-two">
                         <div className="round round-two">
                             <br/>
-                            <div className="round-details">Cuartos<br/><span className="date">Octubre 1</span></div>                     
+                            <div className="round-details">Cuartos<br/><span className="date"></span></div>                     
                             <br/> <br/> 
                             <ul className="matchup">
                                 <div onClick={() => this.handleCuartos(4)} className="button">{this.state.cuartos5}<span className="score">&nbsp;</span></div>
@@ -358,7 +358,7 @@ export default class ProdeApp extends Component{
                         </div>   
 
                         <div className="round round-one current">
-                            <div className="round-details">Octavos<br/><span className="date">Agosto 1</span></div>                     
+                            <div className="round-details">Octavos<br/><span className="date"></span></div>                     
                             <ul className="matchup">
                                 <div onClick={() => this.handleOctavos(8)} className="button">{this.state.octavos[8]}<span className="score">&nbsp;</span></div>
                                 <div onClick={() => this.handleOctavos(9)} className="button">{this.state.octavos[9]}<span className="score">&nbsp;</span></div>
