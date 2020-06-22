@@ -66089,7 +66089,7 @@ function (_Component) {
         className: "round-details"
       }, "Octavos", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "date"
-      }, "Julio 23-31")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      }, "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "matchup"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
@@ -66159,7 +66159,7 @@ function (_Component) {
         className: "round-details"
       }, "Cuartos", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "date"
-      }, "Octubre 1")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      }, "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "matchup"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
@@ -66243,7 +66243,7 @@ function (_Component) {
         className: "round-details"
       }, "Final ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "date"
-      }, "Noviembre 23")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      }, "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "matchup championship"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
@@ -66316,7 +66316,7 @@ function (_Component) {
         className: "round-details"
       }, "Octavos", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "date"
-      }, "Agosto 1")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      }, "")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "matchup"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         onClick: function onClick() {
